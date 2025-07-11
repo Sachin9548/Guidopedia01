@@ -1,0 +1,20 @@
+<section class="courses">
+    <h2>6 Month Journey To Become Skilled Programmer</h2>
+    <div class="container container-courses">
+
+{{#each data.links}}
+        <article class="course">
+            <div class="course-img">
+                <img src="{{this.courseimgurl}}">
+            </div>
+            <div class="course-info">
+                <h4>{{this.coursename}}</h4>
+                <p>{{this.coursedetail}}</p>
+                <a href="{{this.url}}" class="btn btn-primary"> Learn More</a>
+            </div>
+        </article>
+{{/each}}
+
+
+    </div>
+</section>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUIDO-PEDIA</title>
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="shortcut icon" href="https://cdn.glitch.global/6381ef59-eb50-4d44-894e-e3433b20eebb/favicon.png?v=1711010803060" type="image/x-icon">
+     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/checkstyle/loginstyle.css">
+</head>
+<body>
+   <section class="main">
+        <h2 class="heading">Welcome to guidopedia</h2>
+        <form class="container" action="/login" method="post">
+            <input class="iname" type="email" name="email" placeholder="Enter Your Email" autocomplete="off" required>
+            <input class="ipass" type="password" name="password" placeholder="Enter Yor Password" autocomplete="off" required>
+            <input class="btn" type="submit" value="LOGIN">
+        </form>
+        <a class="btn2" href="/signup">Create New Account</a>
+    </section>
+</body>
+</html>

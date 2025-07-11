@@ -1,0 +1,92 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-image: url("https://cdn.glitch.global/6381ef59-eb50-4d44-894e-e3433b20eebb/loginbg.png?v=1711010850229");
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main{
+        border: 2px solid grey;
+       padding: 15px;
+        box-shadow: rgba(98, 96, 96, 0.2);
+        width: 45% ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .heading {
+        color: white;
+        font-size: 2.5rem;
+        text-transform: capitalize;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .iname{
+        height: 42px;
+        width: 100%;
+        border-radius: 7px;
+        margin-bottom: 25px;
+        font-size:1.2rem ;
+        padding: 7px 0 7px 8px;
+    }
+    .ipass{
+        height: 42px;
+        width: 100%;
+        border-radius: 7px;
+        margin-bottom: 25px;
+        font-size:1.2rem ;
+        padding: 7px 0 7px 8px;
+    }
+    .btn{
+        background-color: rgb(44, 39, 41);
+        color: white;
+        height: 50px;
+        width: 35%;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+    .btn:hover{
+        cursor: pointer;
+    }
+    .btn2{
+        color: white;
+        font-weight: 900;
+        font-size: 1.3rem;
+    }
+    .btn2:hover{
+        cursor: pointer;
+    }
+
+    
+    @media screen and (max-width:600px) {
+        .btn{
+            width: 80%;
+        }
+        .main{
+            width: 80%;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .btn{
+            width: 80%;
+        }
+        .main{
+            width: 80%;
+        }
+    }

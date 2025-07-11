@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUIDO-PEDIA</title>
+    <link rel="stylesheet" href="/static/css/homestyle.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="https://cdn.glitch.global/6381ef59-eb50-4d44-894e-e3433b20eebb/favicon.png?v=1711010803060" type="image/x-icon">
+</head>
+ <style>
+        .courses{
+            margin-top: 7rem;
+            margin-bottom: 4rem;
+        }
+    </style>
+<body>
+ {{>navbar}}
+
+{{>courseinfo data=details}}
+
+ {{>footer}}
+   
+
+  <script src="/static/main.js"></script>
+</body>
+</html>

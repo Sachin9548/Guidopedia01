@@ -1,0 +1,182 @@
+.about-achive {
+    margin-top: 8rem;
+}
+
+.container-achive {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+
+.achive-left img {
+    width: 80%;
+}
+
+.achive-right>p {
+    margin: 1.6rem 0 2.5rem;
+}
+
+.achive-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+}
+
+.acard:hover {
+    background: var(--color-bg2);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+    transition: all 400ms ease;
+}
+
+.acard {
+    background: var(--color-bg1);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.acard img {
+    width: 2.5rem;
+}
+
+.achive-icon {
+    background: var(--color-danger);
+    padding: 0.6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+
+}
+
+.green {
+    background: var(--color-success);
+}
+
+.blue {
+    background: rgb(182, 53, 182);
+}
+
+/* team section */
+.Guided{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    padding-bottom: 40px;
+}
+.team {
+    background: var(--color-bg1);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
+    margin-top: 2rem;
+    padding-top: 4rem;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.team-member {
+    background: var(--color-bg2);
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: all 400ms ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.t-image img {
+    filter: saturate(0);
+}
+
+.t-image img:hover {
+    filter: saturate(1);
+}
+
+.t-info {
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+.t-info p {
+    color: var(--color-light);
+}
+
+.t-social {
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+    transition: all 400ms ease;
+}
+
+.t-social a {
+    padding: 1rem;
+}
+
+.t-social a img {
+    width: 1rem;
+}
+
+.team-member:hover .t-social {
+    right: 0;
+}
+
+/* responsive ness for tablet */
+
+@media screen and (max-width:1024px) {
+    .about-achive {
+        margin-top: 5rem;
+    }
+
+    .container-achive {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .achive-left {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .team-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .team-member {
+        padding: 1rem;
+    }
+}
+
+/* responsive ness for mobile */
+
+@media screen and (max-width:600px) {
+    .achive-card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.7rem;
+    }
+
+    .team-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.7rem;
+    }
+    .team-member{
+        padding: 0;
+    }
+    .team-member p{
+        margin-bottom: 1.5rem;
+    }
+    
+}
